@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+    <title>listar_pessoas</title>
+</head>
+<body>
+    <h1>Lista de pessoas:</h1>
+    {%for p in lista:%}
+            {{p.nome}} &ensp; {{p.end}} &ensp; {{p.cpf}} &ensp; {{p.tel}} <a href=/excluir_pessoa?cpf={{p.cpf}}>Excluir</a> <br>
+    {%endfor%}
+</body>
+</html>
