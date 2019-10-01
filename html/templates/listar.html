@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>listar</title>
+</head>
+<body>
+    <h1>LISTAR</h1>
+    <br>
+    {%for i in pessoas:%}
+        {{i.nome}} &ensp; {{i.cpf}} 
+        <form action="/excluir">
+            <input type="hidden" name="cpf" value="{{i.cpf}}">
+            <input type="submit" value="EXCLUIR">
+        </form>
+        <br><br>
+    {%endfor%}
+    <br>
+    <br>
+    <a href="/inserir">inserir</a>
+    <br>
+    <br>
+    <a href="/">voltar para a página inicial</a>
+
+</body>
+</html>
